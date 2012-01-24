@@ -1,3 +1,7 @@
+---
+Splunk Ruby SDK
+---
+
 # The Splunk Software Development Kit for Ruby (Preview Release)
 
 This SDK contains library code and examples designed to enable developers to
