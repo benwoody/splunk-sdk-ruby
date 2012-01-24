@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Splunk::Index</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/splunk-sdk-ruby/client_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/splunk-sdk-ruby/client.rb">lib/splunk-sdk-ruby/client.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="Entity.html">Splunk::Entity</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-attach">#attach</a></li>
+					
+					<li><a href="#method-i-clean">#clean</a></li>
+					
+					<li><a href="#method-i-submit">#submit</a></li>
+					
+					<li><a href="#method-i-upload">#upload</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../test/testfile_txt.html">testfile.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Splunk.html">Splunk</a></li>
+				
+					<li><a href="../Splunk/AtomResponseLoader.html">Splunk::AtomResponseLoader</a></li>
+				
+					<li><a href="../Splunk/Collection.html">Splunk::Collection</a></li>
+				
+					<li><a href="../Splunk/Conf.html">Splunk::Conf</a></li>
+				
+					<li><a href="../Splunk/ConfCollection.html">Splunk::ConfCollection</a></li>
+				
+					<li><a href="../Splunk/Context.html">Splunk::Context</a></li>
+				
+					<li><a href="../Splunk/Entity.html">Splunk::Entity</a></li>
+				
+					<li><a href="../Splunk/Index.html">Splunk::Index</a></li>
+				
+					<li><a href="../Splunk/Job.html">Splunk::Job</a></li>
+				
+					<li><a href="../Splunk/Jobs.html">Splunk::Jobs</a></li>
+				
+					<li><a href="../Splunk/Message.html">Splunk::Message</a></li>
+				
+					<li><a href="../Splunk/ResultsReader.html">Splunk::ResultsReader</a></li>
+				
+					<li><a href="../Splunk/SearchResults.html">Splunk::SearchResults</a></li>
+				
+					<li><a href="../Splunk/Service.html">Splunk::Service</a></li>
+				
+					<li><a href="../Splunk/SplunkError.html">Splunk::SplunkError</a></li>
+				
+					<li><a href="../Splunk/SplunkHTTPError.html">Splunk::SplunkHTTPError</a></li>
+				
+					<li><a href="../JSON.html">JSON</a></li>
+				
+					<li><a href="../JSON/Stream.html">JSON::Stream</a></li>
+				
+					<li><a href="../JSON/Stream/Parser.html">JSON::Stream::Parser</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Splunk::Index</h1>
+
+		<div id="description">
+			<p>
+<a href="../Splunk.html">Splunk</a> can have many indexes.  Each index is
+represented by an <a href="Index.html">Index</a> object.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(service, name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 650</span>
+650:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">service</span>, <span class="ruby-identifier">name</span>)
+651:       <span class="ruby-keyword kw">super</span>(<span class="ruby-identifier">service</span>, <span class="ruby-constant">PATH_INDEXES</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/'</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span>, <span class="ruby-identifier">name</span>)
+652:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="attach-method" class="method-detail ">
+				<a name="method-i-attach"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">attach</span><span
+						class="method-args">(host=nil, source=nil, sourcetype=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Streaming HTTP(S) input for <a href="../Splunk.html">Splunk</a>. Write to
+the returned stream Socket, and <a href="../Splunk.html">Splunk</a> will
+index the data. Optionally, you can assign a <b><tt>host</tt></b>,
+<b><tt>source</tt></b> or <b><tt>sourcetype</tt></b> that will apply to
+every event sent on the socket. Note that the client is responsible for
+closing the socket when finished.
+</p>
+<h4>Returns</h4>
+<p>
+Either an encrypted or non-encrypted stream Socket depending on if
+Service.connect is http or https
+</p>
+<h4>Example - <a href="Index.html">Index</a> 5 events written to the stream and assign a sourcetype &#8216;mysourcetype&#8217; to each event</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  stream = svc.indexes['main'].attach(nil, nil, 'mysourcetype')
+  (1..5).each { stream.write(&quot;This is a cheezy event\r\n&quot;) }
+  stream.close</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="attach-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 666</span>
+666:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attach</span>(<span class="ruby-identifier">host</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">source</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">sourcetype</span>=<span class="ruby-keyword kw">nil</span>)
+667:       <span class="ruby-identifier">args</span> = {<span class="ruby-value">:index</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@name</span>}
+668:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'host'</span>] = <span class="ruby-identifier">host</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">host</span>
+669:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'source'</span>] = <span class="ruby-identifier">source</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">source</span>
+670:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'sourcetype'</span>] = <span class="ruby-identifier">sourcetype</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sourcetype</span>
+671:       <span class="ruby-identifier">path</span> = <span class="ruby-node">&quot;receivers/stream?#{args.urlencode}&quot;</span>
+672: 
+673:       <span class="ruby-identifier">cn</span> = <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">connect</span>
+674:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-node">&quot;POST #{@service.context.fullpath(path)} HTTP/1.1\r\n&quot;</span>)
+675:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-node">&quot;Host: #{@service.context.host}:#{@service.context.port}\r\n&quot;</span>)
+676:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-value str">&quot;Accept-Encoding: identity\r\n&quot;</span>)
+677:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-node">&quot;Authorization: Splunk #{@service.context.token}\r\n&quot;</span>)
+678:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-value str">&quot;X-Splunk-Input-Mode: Streaming\r\n&quot;</span>)
+679:       <span class="ruby-identifier">cn</span>.<span class="ruby-identifier">write</span>(<span class="ruby-value str">&quot;\r\n&quot;</span>)
+680:       <span class="ruby-identifier">cn</span>
+681:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clean-method" class="method-detail ">
+				<a name="method-i-clean"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">clean</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Nuke all events in this index.  This is done by setting
+<b><tt>maxTotalDataSizeMG</tt></b> and
+<b><tt>frozenTimePeriodInSecs</tt></b> both to 1. The call will then block
+until <b><tt>totalEventCount</tt></b> == 0. When the call is completed, the
+original parameters are restored.
+</p>
+<h4>Returns</h4>
+<p>
+The original &#8216;maxTotalDataSizeMB&#8217; and
+&#8216;frozenTimePeriodInSecs&#8217; parameters in a <a
+href="../Hash.html">Hash</a>
+</p>
+<h4>Example - clean the &#8216;main&#8217; index</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.indexes['main'].clean</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="clean-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 693</span>
+693:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">clean</span>
+694:       <span class="ruby-identifier">saved</span> = <span class="ruby-identifier">read</span>([<span class="ruby-value str">'maxTotalDataSizeMB'</span>, <span class="ruby-value str">'frozenTimePeriodInSecs'</span>])
+695:       <span class="ruby-identifier">update</span>(<span class="ruby-value">:maxTotalDataSizeMB</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, <span class="ruby-value">:frozenTimePeriodInSecs</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>)
+696:       <span class="ruby-comment cmt">#@service.context.post(@path, {})</span>
+697:       <span class="ruby-keyword kw">until</span> <span class="ruby-keyword kw">self</span>[<span class="ruby-value str">'totalEventCount'</span>] <span class="ruby-operator">==</span> <span class="ruby-value str">'0'</span> <span class="ruby-keyword kw">do</span>
+698:         <span class="ruby-identifier">sleep</span>(<span class="ruby-value">1</span>)
+699:         <span class="ruby-identifier">puts</span> <span class="ruby-keyword kw">self</span>[<span class="ruby-value str">'totalEventCount'</span>]
+700:       <span class="ruby-keyword kw">end</span>
+701:       <span class="ruby-identifier">update</span>(<span class="ruby-identifier">saved</span>)
+702:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="submit-method" class="method-detail ">
+				<a name="method-i-submit"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">submit</span><span
+						class="method-args">(events, host=nil, source=nil, sourcetype=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Batch HTTP(S) input for <a href="../Splunk.html">Splunk</a>. Specify one or
+more events in a String along with optional <b><tt>host</tt></b>,
+<b><tt>source</tt></b> or <b><tt>sourcetype</tt></b> fields which will
+apply to all events.
+</p>
+<p>
+Example - <a href="Index.html">Index</a> a single event into the
+&#8216;main&#8217; index with source &#8216;baz&#8217; and sourcetype
+&#8216;foo&#8217;
+</p>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.indexes['main'].submit(&quot;this is an event&quot;, nil, &quot;baz&quot;, &quot;foo&quot;)
+</pre>
+<p>
+Example 2 - <a href="Index.html">Index</a> multiple events into the
+&#8216;main&#8217; index with default metadata TODO: Fill me in
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="submit-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 713</span>
+713:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">submit</span>(<span class="ruby-identifier">events</span>, <span class="ruby-identifier">host</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">source</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">sourcetype</span>=<span class="ruby-keyword kw">nil</span>)
+714:       <span class="ruby-identifier">args</span> = {<span class="ruby-value">:index</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@name</span>}
+715:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'host'</span>] = <span class="ruby-identifier">host</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">host</span>
+716:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'source'</span>] = <span class="ruby-identifier">source</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">source</span>
+717:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'sourcetype'</span>] = <span class="ruby-identifier">sourcetype</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sourcetype</span>
+718: 
+719:       <span class="ruby-identifier">path</span> = <span class="ruby-node">&quot;receivers/simple?#{args.urlencode}&quot;</span>
+720:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">events</span>, {})
+721:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="upload-method" class="method-detail ">
+				<a name="method-i-upload"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">upload</span><span
+						class="method-args">(filename, args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Upload a file accessible by the <a href="../Splunk.html">Splunk</a> server.
+The full path of the file is specified by <b><tt>filename</tt></b>.
+</p>
+<h4>Optional Arguments</h4>
+<p>
+<tt>args</tt> - Valid optional args are listed below.  Note that they are
+all Strings:
+</p>
+<ul>
+<li><p>
+<tt>:host</tt> - The host for the events
+</p>
+</li>
+<li><p>
+<tt>:host_regex</tt> - A regex to be used to extract a &#8216;host&#8217;
+field from the path. If the path matches this regular expression, the
+captured value is used to populate the &#8216;host&#8217; field or events
+from this data input.  The regular expression must have one capture group.
+</p>
+</li>
+<li><p>
+<tt>:host_segment</tt> - Use the specified slash-seperated segment of the
+path as the host field value.
+</p>
+</li>
+<li><p>
+<tt>:rename-source</tt> - The value of the &#8216;source&#8217; field to be
+applied to the data from this file
+</p>
+</li>
+<li><p>
+<tt>:sourcetype</tt> - The value of the &#8216;sourcetype&#8217; field to
+be applied to data from this file
+</p>
+</li>
+</ul>
+<h4>Example - Upload a file using defaults</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.indexes['main'].upload(&quot;/Users/rdas/myfile.log&quot;)</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="upload-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 739</span>
+739:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">upload</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">args</span>={})
+740:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'index'</span>] = <span class="ruby-ivar">@name</span>
+741:       <span class="ruby-identifier">args</span>[<span class="ruby-value str">'name'</span>] = <span class="ruby-identifier">filename</span>
+742:       <span class="ruby-identifier">path</span> = <span class="ruby-value str">&quot;data/inputs/oneshot&quot;</span>
+743:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">args</span>)
+744:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

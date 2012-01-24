@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Splunk::AtomResponseLoader</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/splunk-sdk-ruby/aloader_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/splunk-sdk-ruby/aloader.rb">lib/splunk-sdk-ruby/aloader.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-load_text">::load_text</a></li>
+					
+					<li><a href="#method-c-load_text_as_record">::load_text_as_record</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-c-record">::record</a></li>
+					
+					<li><a href="#method-i-is_dict">#is_dict</a></li>
+					
+					<li><a href="#method-i-is_item">#is_item</a></li>
+					
+					<li><a href="#method-i-is_key">#is_key</a></li>
+					
+					<li><a href="#method-i-is_list">#is_list</a></li>
+					
+					<li><a href="#method-i-is_special">#is_special</a></li>
+					
+					<li><a href="#method-i-load">#load</a></li>
+					
+					<li><a href="#method-i-load_attrs">#load_attrs</a></li>
+					
+					<li><a href="#method-i-load_dict">#load_dict</a></li>
+					
+					<li><a href="#method-i-load_elem">#load_elem</a></li>
+					
+					<li><a href="#method-i-load_list">#load_list</a></li>
+					
+					<li><a href="#method-i-load_root">#load_root</a></li>
+					
+					<li><a href="#method-i-load_value">#load_value</a></li>
+					
+					<li><a href="#method-i-localname">#localname</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../test/testfile_txt.html">testfile.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Splunk.html">Splunk</a></li>
+				
+					<li><a href="../Splunk/AtomResponseLoader.html">Splunk::AtomResponseLoader</a></li>
+				
+					<li><a href="../Splunk/Collection.html">Splunk::Collection</a></li>
+				
+					<li><a href="../Splunk/Conf.html">Splunk::Conf</a></li>
+				
+					<li><a href="../Splunk/ConfCollection.html">Splunk::ConfCollection</a></li>
+				
+					<li><a href="../Splunk/Context.html">Splunk::Context</a></li>
+				
+					<li><a href="../Splunk/Entity.html">Splunk::Entity</a></li>
+				
+					<li><a href="../Splunk/Index.html">Splunk::Index</a></li>
+				
+					<li><a href="../Splunk/Job.html">Splunk::Job</a></li>
+				
+					<li><a href="../Splunk/Jobs.html">Splunk::Jobs</a></li>
+				
+					<li><a href="../Splunk/Message.html">Splunk::Message</a></li>
+				
+					<li><a href="../Splunk/ResultsReader.html">Splunk::ResultsReader</a></li>
+				
+					<li><a href="../Splunk/SearchResults.html">Splunk::SearchResults</a></li>
+				
+					<li><a href="../Splunk/Service.html">Splunk::Service</a></li>
+				
+					<li><a href="../Splunk/SplunkError.html">Splunk::SplunkError</a></li>
+				
+					<li><a href="../Splunk/SplunkHTTPError.html">Splunk::SplunkHTTPError</a></li>
+				
+					<li><a href="../JSON.html">JSON</a></li>
+				
+					<li><a href="../JSON/Stream.html">JSON::Stream</a></li>
+				
+					<li><a href="../JSON/Stream/Parser.html">JSON::Stream::Parser</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Splunk::AtomResponseLoader</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="load-text-method" class="method-detail ">
+				<a name="method-c-load_text"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_text</span><span
+						class="method-args">(text, match=nil, namespaces=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-text-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 80</span>
+80:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">load_text</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">match</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">namespaces</span>=<span class="ruby-keyword kw">nil</span>)
+81:       <span class="ruby-constant">AtomResponseLoader</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">match</span>, <span class="ruby-identifier">namespaces</span>).<span class="ruby-identifier">load</span>
+82:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-text-as-record-method" class="method-detail ">
+				<a name="method-c-load_text_as_record"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_text_as_record</span><span
+						class="method-args">(text, match=nil, namespaces=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-text-as-record-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 84</span>
+84:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">load_text_as_record</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">match</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">namespaces</span>=<span class="ruby-keyword kw">nil</span>)
+85:       <span class="ruby-identifier">result</span> = <span class="ruby-constant">AtomResponseLoader</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">match</span>, <span class="ruby-identifier">namespaces</span>).<span class="ruby-identifier">load</span>
+86:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+87:         <span class="ruby-identifier">retarr</span> = []
+88:         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">retarr</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">add_attrs</span>}
+89:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">retarr</span>
+90:       <span class="ruby-keyword kw">end</span>
+91:       <span class="ruby-identifier">result</span>.<span class="ruby-identifier">add_attrs</span>
+92:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(text, match=nil, namespaces=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 43</span>
+43:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">match</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">namespaces</span>=<span class="ruby-keyword kw">nil</span>)
+44:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;text is nil&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">nil?</span>
+45:       <span class="ruby-identifier">text</span> = <span class="ruby-identifier">text</span>.<span class="ruby-identifier">strip</span>
+46:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;text size is 0&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+47:       <span class="ruby-ivar">@text</span> = <span class="ruby-identifier">text</span>
+48:       <span class="ruby-ivar">@match</span> = <span class="ruby-identifier">match</span>
+49:       <span class="ruby-ivar">@namespaces</span> = <span class="ruby-identifier">namespaces</span>
+50:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="record-method" class="method-detail ">
+				<a name="method-c-record"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">record</span><span
+						class="method-args">(hash)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Method to convert a dict to a &#8216;dot notation&#8217; accessor object
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="record-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 95</span>
+95:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">record</span>(<span class="ruby-identifier">hash</span>)
+96:       <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">add_attrs</span>
+97:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="load-method" class="method-detail ">
+				<a name="method-i-load"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 52</span>
+52:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load</span>()
+53:       <span class="ruby-identifier">parser</span> = <span class="ruby-constant">LibXML</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">string</span>(<span class="ruby-ivar">@text</span>)
+54:       <span class="ruby-identifier">doc</span> = <span class="ruby-identifier">parser</span>.<span class="ruby-identifier">parse</span>
+55: 
+56:       <span class="ruby-comment cmt">#if the document is empty, bail</span>
+57:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">child?</span>
+58: 
+59:       <span class="ruby-identifier">items</span> = []
+60:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@match</span>.<span class="ruby-identifier">nil?</span>
+61:         <span class="ruby-identifier">items</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">root</span>
+62:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@namespaces</span>.<span class="ruby-identifier">nil?</span>
+63:         <span class="ruby-identifier">items</span> = <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@match</span>).<span class="ruby-identifier">to_a</span>
+64:       <span class="ruby-keyword kw">else</span>
+65:         <span class="ruby-identifier">items</span> = <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@match</span>, <span class="ruby-ivar">@namespaces</span>).<span class="ruby-identifier">to_a</span>
+66:       <span class="ruby-keyword kw">end</span>
+67: 
+68:       <span class="ruby-comment cmt">#process just the root if there are no children or just one child.</span>
+69:       <span class="ruby-identifier">count</span> = <span class="ruby-identifier">items</span>.<span class="ruby-identifier">size</span>
+70: 
+71:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">load_root</span>(<span class="ruby-identifier">items</span>[<span class="ruby-value">0</span>]) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+72: 
+73:       <span class="ruby-identifier">arr</span> = []
+74:       <span class="ruby-identifier">items</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+75:         <span class="ruby-identifier">arr</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">load_root</span>(<span class="ruby-identifier">item</span>)
+76:       <span class="ruby-keyword kw">end</span>
+77:       <span class="ruby-identifier">arr</span>
+78:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="is-dict-method" class="method-detail ">
+				<a name="method-i-is_dict"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_dict</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="is-dict-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 179</span>
+179:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_dict</span>(<span class="ruby-identifier">node</span>)
+180:       <span class="ruby-identifier">is_special</span>(<span class="ruby-identifier">node</span>, <span class="ruby-value str">'dict'</span>)
+181:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="is-item-method" class="method-detail ">
+				<a name="method-i-is_item"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_item</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="is-item-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 187</span>
+187:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_item</span>(<span class="ruby-identifier">node</span>)
+188:       <span class="ruby-identifier">is_special</span>(<span class="ruby-identifier">node</span>, <span class="ruby-value str">'item'</span>)
+189:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="is-key-method" class="method-detail ">
+				<a name="method-i-is_key"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_key</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="is-key-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 191</span>
+191:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_key</span>(<span class="ruby-identifier">node</span>)
+192:       <span class="ruby-identifier">is_special</span>(<span class="ruby-identifier">node</span>, <span class="ruby-value str">'key'</span>)
+193:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="is-list-method" class="method-detail ">
+				<a name="method-i-is_list"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_list</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="is-list-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 183</span>
+183:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_list</span>(<span class="ruby-identifier">node</span>)
+184:       <span class="ruby-identifier">is_special</span>(<span class="ruby-identifier">node</span>, <span class="ruby-value str">'list'</span>)
+185:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="is-special-method" class="method-detail ">
+				<a name="method-i-is_special"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_special</span><span
+						class="method-args">(node, verb)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="is-special-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 195</span>
+195:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_special</span>(<span class="ruby-identifier">node</span>, <span class="ruby-identifier">verb</span>)
+196:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">verb</span>
+197:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+198:       <span class="ruby-keyword kw">end</span>
+199:       <span class="ruby-identifier">nss</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">namespaces</span>
+200:       <span class="ruby-identifier">nss</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">ns</span><span class="ruby-operator">|</span>
+201:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">ns</span>.<span class="ruby-identifier">href</span> <span class="ruby-operator">==</span> <span class="ruby-constant">XML_NS</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span><span class="ruby-node">&quot;#{ns.prefix}:#{verb}&quot;</span>
+202:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+203:         <span class="ruby-keyword kw">end</span>
+204:       }
+205:       <span class="ruby-keyword kw">false</span>
+206:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-attrs-method" class="method-detail ">
+				<a name="method-i-load_attrs"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_attrs</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-attrs-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 125</span>
+125:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_attrs</span>(<span class="ruby-identifier">node</span>)
+126:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">attributes?</span>
+127:       <span class="ruby-identifier">attrs</span> = {}
+128:       <span class="ruby-identifier">node</span>.<span class="ruby-identifier">attributes</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">attrs</span>[<span class="ruby-identifier">a</span>.<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">value</span>}
+129:       <span class="ruby-identifier">attrs</span>
+130:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-dict-method" class="method-detail ">
+				<a name="method-i-load_dict"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_dict</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-dict-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 132</span>
+132:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_dict</span>(<span class="ruby-identifier">node</span>)
+133:       <span class="ruby-identifier">value</span> = {}
+134:       <span class="ruby-identifier">node</span>.<span class="ruby-identifier">each_element</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">child</span><span class="ruby-operator">|</span>
+135:         <span class="ruby-comment cmt">#assert(is_key(node))</span>
+136:         <span class="ruby-identifier">name</span> = <span class="ruby-identifier">child</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'name'</span>]
+137:         <span class="ruby-identifier">value</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">load_value</span>(<span class="ruby-identifier">child</span>)
+138:       <span class="ruby-keyword kw">end</span>
+139:       <span class="ruby-identifier">value</span>
+140:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-elem-method" class="method-detail ">
+				<a name="method-i-load_elem"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_elem</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-elem-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 107</span>
+107:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_elem</span>(<span class="ruby-identifier">node</span>)
+108:       <span class="ruby-identifier">name</span> = <span class="ruby-identifier">localname</span>(<span class="ruby-identifier">node</span>)
+109:       <span class="ruby-identifier">attrs</span> = <span class="ruby-identifier">load_attrs</span>(<span class="ruby-identifier">node</span>)
+110:       <span class="ruby-identifier">value</span> = <span class="ruby-identifier">load_value</span>(<span class="ruby-identifier">node</span>)
+111:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">name</span>,<span class="ruby-identifier">value</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">nil?</span>
+112:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">name</span>,<span class="ruby-identifier">attrs</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">nil?</span>
+113: 
+114:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">String</span>)
+115:         <span class="ruby-identifier">attrs</span>[<span class="ruby-value str">&quot;_text&quot;</span>] = <span class="ruby-identifier">value</span>
+116:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">name</span>, <span class="ruby-identifier">attrs</span>
+117:       <span class="ruby-keyword kw">end</span>
+118: 
+119:       <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+120:         <span class="ruby-identifier">value</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">v</span>
+121:       }
+122:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">name</span>,<span class="ruby-identifier">value</span>
+123:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-list-method" class="method-detail ">
+				<a name="method-i-load_list"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_list</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-list-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 142</span>
+142:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_list</span>(<span class="ruby-identifier">node</span>)
+143:       <span class="ruby-comment cmt">#assert(is_list(node))</span>
+144:       <span class="ruby-identifier">value</span> = []
+145:       <span class="ruby-identifier">node</span>.<span class="ruby-identifier">each_element</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">child</span><span class="ruby-operator">|</span>
+146:         <span class="ruby-comment cmt">#assert(is_item(child))</span>
+147:         <span class="ruby-identifier">value</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">load_value</span>(<span class="ruby-identifier">child</span>))
+148:       <span class="ruby-keyword kw">end</span>
+149:       <span class="ruby-identifier">value</span>
+150:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-root-method" class="method-detail ">
+				<a name="method-i-load_root"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_root</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-root-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 100</span>
+100:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_root</span>(<span class="ruby-identifier">node</span>)
+101:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">load_dict</span>(<span class="ruby-identifier">node</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_dict</span>(<span class="ruby-identifier">node</span>)
+102:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">load_list</span>(<span class="ruby-identifier">node</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_list</span>(<span class="ruby-identifier">node</span>)
+103:       <span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span> = <span class="ruby-identifier">load_elem</span>(<span class="ruby-identifier">node</span>)
+104:       {<span class="ruby-identifier">k</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">v</span>}
+105:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-value-method" class="method-detail ">
+				<a name="method-i-load_value"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_value</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-value-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 152</span>
+152:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_value</span>(<span class="ruby-identifier">node</span>)
+153:       <span class="ruby-identifier">value</span> = {}
+154:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">child</span> <span class="ruby-keyword kw">in</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">children</span>
+155:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">child</span>.<span class="ruby-identifier">node_type_name</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">'text'</span>)
+156:           <span class="ruby-identifier">text</span> = <span class="ruby-identifier">child</span>.<span class="ruby-identifier">content</span>
+157:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">nil?</span>
+158:           <span class="ruby-identifier">text</span>.<span class="ruby-identifier">strip!</span>
+159:           <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+160:           <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">children</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>
+161:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">text</span>
+162:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">child</span>.<span class="ruby-identifier">node_type_name</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">'element'</span>)
+163:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">load_dict</span>(<span class="ruby-identifier">child</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_dict</span>(<span class="ruby-identifier">child</span>)
+164:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">load_list</span>(<span class="ruby-identifier">child</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_list</span>(<span class="ruby-identifier">child</span>)
+165:           <span class="ruby-identifier">name</span>, <span class="ruby-identifier">item</span> = <span class="ruby-identifier">load_elem</span>(<span class="ruby-identifier">child</span>)
+166:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">name</span>)
+167:             <span class="ruby-identifier">current</span> = <span class="ruby-identifier">value</span>[<span class="ruby-identifier">name</span>]
+168:             <span class="ruby-identifier">value</span>[<span class="ruby-identifier">name</span>] = [<span class="ruby-identifier">current</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">current</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">Array</span>)
+169:             <span class="ruby-identifier">value</span>[<span class="ruby-identifier">name</span>].<span class="ruby-identifier">push</span>(<span class="ruby-identifier">item</span>)
+170:           <span class="ruby-keyword kw">else</span>
+171:             <span class="ruby-identifier">value</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">item</span>
+172:           <span class="ruby-keyword kw">end</span>
+173:         <span class="ruby-keyword kw">end</span>
+174:       <span class="ruby-keyword kw">end</span>
+175:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+176:       <span class="ruby-identifier">value</span>
+177:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="localname-method" class="method-detail ">
+				<a name="method-i-localname"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">localname</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="localname-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/aloader.rb, line 208</span>
+208:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">localname</span>(<span class="ruby-identifier">node</span>)
+209:       <span class="ruby-identifier">p</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">name</span>.<span class="ruby-identifier">index</span>(<span class="ruby-value str">':'</span>)
+210:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">name</span>[<span class="ruby-identifier">p</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>,<span class="ruby-value">1</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">p</span>
+211:       <span class="ruby-identifier">node</span>.<span class="ruby-identifier">name</span>
+212:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

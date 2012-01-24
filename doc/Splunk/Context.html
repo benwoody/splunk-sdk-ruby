@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Splunk::Context</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/splunk-sdk-ruby/context_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/splunk-sdk-ruby/context.rb">lib/splunk-sdk-ruby/context.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-connect">#connect</a></li>
+					
+					<li><a href="#method-i-delete">#delete</a></li>
+					
+					<li><a href="#method-i-get">#get</a></li>
+					
+					<li><a href="#method-i-login">#login</a></li>
+					
+					<li><a href="#method-i-logout">#logout</a></li>
+					
+					<li><a href="#method-i-post">#post</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../test/testfile_txt.html">testfile.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Splunk.html">Splunk</a></li>
+				
+					<li><a href="../Splunk/AtomResponseLoader.html">Splunk::AtomResponseLoader</a></li>
+				
+					<li><a href="../Splunk/Collection.html">Splunk::Collection</a></li>
+				
+					<li><a href="../Splunk/Conf.html">Splunk::Conf</a></li>
+				
+					<li><a href="../Splunk/ConfCollection.html">Splunk::ConfCollection</a></li>
+				
+					<li><a href="../Splunk/Context.html">Splunk::Context</a></li>
+				
+					<li><a href="../Splunk/Entity.html">Splunk::Entity</a></li>
+				
+					<li><a href="../Splunk/Index.html">Splunk::Index</a></li>
+				
+					<li><a href="../Splunk/Job.html">Splunk::Job</a></li>
+				
+					<li><a href="../Splunk/Jobs.html">Splunk::Jobs</a></li>
+				
+					<li><a href="../Splunk/Message.html">Splunk::Message</a></li>
+				
+					<li><a href="../Splunk/ResultsReader.html">Splunk::ResultsReader</a></li>
+				
+					<li><a href="../Splunk/SearchResults.html">Splunk::SearchResults</a></li>
+				
+					<li><a href="../Splunk/Service.html">Splunk::Service</a></li>
+				
+					<li><a href="../Splunk/SplunkError.html">Splunk::SplunkError</a></li>
+				
+					<li><a href="../Splunk/SplunkHTTPError.html">Splunk::SplunkHTTPError</a></li>
+				
+					<li><a href="../JSON.html">JSON</a></li>
+				
+					<li><a href="../JSON/Stream.html">JSON::Stream</a></li>
+				
+					<li><a href="../JSON/Stream/Parser.html">JSON::Stream::Parser</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Splunk::Context</h1>
+
+		<div id="description">
+			<p>
+The <b>Binding Layer</b><br>. This class is used for lower level REST-based
+control of <a href="../Splunk.html">Splunk</a>. To get started by logging
+in, create a <a href="Context.html">Context</a> instance and call
+Context::login on it.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="DEFAULT_HOST">DEFAULT_HOST</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="DEFAULT_PORT">DEFAULT_PORT</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="DEFAULT_PROTOCOL">DEFAULT_PROTOCOL</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="protocol-attribute-method" class="method-detail">
+				<a name="protocol"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">protocol</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+&#8216;https&#8217; or &#8216;http&#8217; - String
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="host-attribute-method" class="method-detail">
+				<a name="host"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">host</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+host were <a href="../Splunk.html">Splunk</a> Server lives - String
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="port-attribute-method" class="method-detail">
+				<a name="port"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">port</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+port number of the <a href="../Splunk.html">Splunk</a> Server&#8217;s
+management port - String
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="key-file-attribute-method" class="method-detail">
+				<a name="key_file"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">key_file</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+the full path to a SSL key file - String
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="cert-file-attribute-method" class="method-detail">
+				<a name="cert_file"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">cert_file</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+the full path to a SSL certificate file - String
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="token-attribute-method" class="method-detail">
+				<a name="token"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">token</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+the authentication for this session.  nil if logged out. - String
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create an instance of a <a href="Context.html">Context</a> object used for
+logging in to <a href="../Splunk.html">Splunk</a>
+</p>
+<h4>Attributes</h4>
+<p>
+<tt>args</tt> - Valid args are listed below.  Note that they are all
+Strings:
+</p>
+<ul>
+<li><p>
+<tt>:username</tt> - log in to <a href="../Splunk.html">Splunk</a> as this
+user (no default)
+</p>
+</li>
+<li><p>
+<tt>:password</tt> - password for user &#8216;username&#8217; (no default)
+</p>
+</li>
+<li><p>
+<tt>:host</tt> - <a href="../Splunk.html">Splunk</a> host (e.g.
+&#8216;10.1.2.3&#8217;) (defaults to &#8216;localhost&#8217;)
+</p>
+</li>
+<li><p>
+<tt>:port</tt> - the <a href="../Splunk.html">Splunk</a> management port
+(defaults to &#8216;8089&#8217;)
+</p>
+</li>
+<li><p>
+<tt>:protocol</tt> - either &#8216;https&#8217; or &#8216;http&#8217;
+(defaults to &#8216;https&#8217;)
+</p>
+</li>
+<li><p>
+<tt>:namespace</tt> - application namespace option. 
+&#8216;username:appname&#8217; (defaults to nil)
+</p>
+</li>
+<li><p>
+<tt>:<a href="Context.html#key_file">key_file</a></tt> - the full path to a
+SSL key file (defaults to nil)
+</p>
+</li>
+<li><p>
+<tt>:<a href="Context.html#cert_file">cert_file</a></tt> - the full path to
+a SSL certificate file (defaults to nil)
+</p>
+</li>
+</ul>
+<h4>Returns</h4>
+<p>
+instance of a <a href="Context.html">Context</a> class - must call login to
+use
+</p>
+<h4>Examples</h4>
+<pre>
+  svc = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'foo', :host =&gt; '10.1.1.1', :port = '9999')
+  svc.login</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 66</span>
+66:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">args</span>)
+67:       <span class="ruby-ivar">@args</span> = <span class="ruby-identifier">args</span>
+68:       <span class="ruby-ivar">@token</span> = <span class="ruby-keyword kw">nil</span>
+69:       <span class="ruby-ivar">@protocol</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:protocol</span>, <span class="ruby-constant">DEFAULT_PROTOCOL</span>)
+70:       <span class="ruby-ivar">@host</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:host</span>, <span class="ruby-constant">DEFAULT_HOST</span>)
+71:       <span class="ruby-ivar">@port</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:port</span>, <span class="ruby-constant">DEFAULT_PORT</span>)
+72:       <span class="ruby-ivar">@prefix</span> = <span class="ruby-node">&quot;#{@protocol}://#{@host}:#{@port}&quot;</span>
+73:       <span class="ruby-ivar">@username</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:username</span>, <span class="ruby-value str">''</span>)
+74:       <span class="ruby-ivar">@password</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:password</span>, <span class="ruby-value str">''</span>)
+75:       <span class="ruby-ivar">@namespace</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:namespace</span>, <span class="ruby-keyword kw">nil</span>)
+76:       <span class="ruby-ivar">@key_file</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:key_file</span>, <span class="ruby-keyword kw">nil</span>)
+77:       <span class="ruby-ivar">@cert_file</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:cert_file</span>, <span class="ruby-keyword kw">nil</span>)
+78:       <span class="ruby-ivar">@headers</span> = <span class="ruby-keyword kw">nil</span>
+79:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="connect-method" class="method-detail ">
+				<a name="method-i-connect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">connect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Open a socket to the <a href="../Splunk.html">Splunk</a> HTTP server.  If
+the <a href="Context.html">Context</a> protocol is &#8216;https&#8217;,
+then an SSL wrapped socket is returned.  If the <a
+href="Context.html">Context</a> protocol is &#8216;http&#8217;, then a
+regular socket is returned.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="connect-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 198</span>
+198:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">connect</span>
+199:       <span class="ruby-identifier">cn</span> = <span class="ruby-constant">TCPSocket</span>.<span class="ruby-identifier">new</span> <span class="ruby-ivar">@host</span>, <span class="ruby-ivar">@port</span>
+200:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">protocol</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'https'</span>
+201:         <span class="ruby-identifier">ssl_context</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSLContext</span>.<span class="ruby-identifier">new</span>
+202:         <span class="ruby-identifier">ssl_context</span>.<span class="ruby-identifier">verify_mode</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">VERIFY_NONE</span>
+203:         <span class="ruby-identifier">sslsocket</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSLSocket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">cn</span>, <span class="ruby-identifier">ssl_context</span>)
+204:         <span class="ruby-identifier">sslsocket</span>.<span class="ruby-identifier">sync_close</span> = <span class="ruby-keyword kw">true</span>
+205:         <span class="ruby-identifier">sslsocket</span>.<span class="ruby-identifier">connect</span>
+206:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">sslsocket</span>
+207:       <span class="ruby-keyword kw">end</span>
+208:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">cn</span>
+209:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="delete-method" class="method-detail ">
+				<a name="method-i-delete"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">delete</span><span
+						class="method-args">(path, params={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Make a DELETE REST call. <em>path</em> is a partial path to the URL.  For
+example &#8216;authentication/users/rob&#8217;, <em>params</em> are not
+generally used (they are for lower level control)
+</p>
+<h4>Returns</h4>
+<pre>
+  The body of the response or throws SplunkHTTPError if the error &gt;= 400
+</pre>
+<h4>Example - Delete the user &#8216;rob&#8217;</h4>
+<pre>
+  ctx = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'password', :protocol =&gt; 'https')
+  ctx.login
+  response = ctx.delete('authentication/users/rob')
+</pre>
+<p>
+TODO: Make this the same as &#8216;get&#8217;.  In other words, params are
+not headers
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="delete-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 187</span>
+187:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">params</span>={})
+188:       <span class="ruby-identifier">resource</span> = <span class="ruby-identifier">create_resource</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">params</span>)
+189:       <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">delete</span> <span class="ruby-identifier">params</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">response</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">result</span>, &amp;<span class="ruby-identifier">block</span><span class="ruby-operator">|</span>
+190:         <span class="ruby-identifier">check_for_error_return</span>(<span class="ruby-identifier">response</span>)
+191:         <span class="ruby-identifier">response</span>
+192:       <span class="ruby-keyword kw">end</span>
+193:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-method" class="method-detail ">
+				<a name="method-i-get"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get</span><span
+						class="method-args">(path, params={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Make a GET REST call. <em>path</em> is a partial path to the URL.  For
+example: &#8216;server/info&#8217;. <em>params</em> are not generally used
+(they are for lower level control)
+</p>
+<h4>Returns</h4>
+<pre>
+  The body of the response or throws SplunkHTTPError if the error &gt;= 400
+</pre>
+<h4>Example - Get Server Information as an ATOM XML response</h4>
+<pre>
+  ctx = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'password', :protocol =&gt; 'https')
+  ctx.login
+  response = ctx.get('server/info')
+</pre>
+<h4>Example - Get Server Information, but conver the ATOM response into json and enable</h4>
+<p>
+dot accessors.
+</p>
+<pre>
+  ctx = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'password', :protocol =&gt; 'https')
+  ctx.login
+  response = ctx.get('server/info')
+  record = AtomResponseLoader::load_text_as_record(response, MATCH_ENTRY_CONTENT, NAMESPACES)
+  puts record.content #Display the json</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="get-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 157</span>
+157:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">params</span>={})
+158:       <span class="ruby-identifier">headers</span> = {} <span class="ruby-comment cmt">#we don't allow additional headers for now</span>
+159: 
+160:       <span class="ruby-comment cmt">#flatten params onto the path</span>
+161:       <span class="ruby-identifier">fullpath</span> = <span class="ruby-identifier">path</span>
+162:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+163:         <span class="ruby-identifier">ext_path</span> = <span class="ruby-identifier">build_stream</span>(<span class="ruby-identifier">flatten_params</span>(<span class="ruby-identifier">params</span>)).<span class="ruby-identifier">string</span>
+164:         <span class="ruby-identifier">fullpath</span> = <span class="ruby-identifier">path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'?'</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ext_path</span>
+165:       <span class="ruby-keyword kw">end</span>
+166: 
+167:       <span class="ruby-identifier">resource</span> = <span class="ruby-identifier">create_resource</span>(<span class="ruby-identifier">fullpath</span>, <span class="ruby-identifier">headers</span>)
+168:       <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">get</span> <span class="ruby-identifier">headers</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">response</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">result</span>, &amp;<span class="ruby-identifier">block</span><span class="ruby-operator">|</span>
+169:         <span class="ruby-identifier">check_for_error_return</span>(<span class="ruby-identifier">response</span>)
+170:         <span class="ruby-identifier">response</span>
+171:       <span class="ruby-keyword kw">end</span>
+172:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="login-method" class="method-detail ">
+				<a name="method-i-login"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">login</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Login to <a href="../Splunk.html">Splunk</a>. The <em>token</em> attribute
+will be filled with the <a href="../Splunk.html">Splunk</a> authentication
+token upon successful login. Raises <a
+href="SplunkError.html">SplunkError</a> if problem loggin in.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="login-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 84</span>
+84:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">login</span>
+85:       <span class="ruby-comment cmt">#Note that this will throw it's own exception and we want to pass it up</span>
+86:       <span class="ruby-identifier">response</span> = <span class="ruby-identifier">post</span>(<span class="ruby-value str">&quot;/services/auth/login&quot;</span>, {<span class="ruby-value">:username=</span><span class="ruby-operator">&gt;</span><span class="ruby-ivar">@username</span>, <span class="ruby-value">:password=</span><span class="ruby-operator">&gt;</span><span class="ruby-ivar">@password</span>})
+87:       <span class="ruby-keyword kw">begin</span>
+88:         <span class="ruby-identifier">doc</span> = <span class="ruby-constant">LibXML</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">string</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">to_s</span>).<span class="ruby-identifier">parse</span>
+89:         <span class="ruby-ivar">@token</span> = <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value str">'//sessionKey'</span>).<span class="ruby-identifier">last</span>.<span class="ruby-identifier">content</span>
+90:         <span class="ruby-ivar">@headers</span> = {<span class="ruby-value str">'Authorization'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Splunk #{@token}&quot;</span>, <span class="ruby-value str">'User-Agent'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'splunk-sdk-ruby/0.1'</span>}
+91:       <span class="ruby-keyword kw">rescue</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+92:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">SplunkError</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>
+93:       <span class="ruby-keyword kw">end</span>
+94:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="logout-method" class="method-detail ">
+				<a name="method-i-logout"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">logout</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Log out of <a href="../Splunk.html">Splunk</a>.  For now this simply
+nil&#8217;s out the <em>token</em> attribute
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="logout-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 97</span>
+ 97:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logout</span>
+ 98:       <span class="ruby-ivar">@token</span> = <span class="ruby-keyword kw">nil</span>
+ 99:       <span class="ruby-ivar">@headers</span> = {<span class="ruby-value str">'Authorization'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Splunk #{@token}&quot;</span>, <span class="ruby-value str">'User-Agent'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'splunk-sdk-ruby/0.1'</span>}
+100:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="post-method" class="method-detail ">
+				<a name="method-i-post"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">post</span><span
+						class="method-args">(path, body, params={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Make a POST REST call. <em>path</em> is a partial path to the URL.  For
+example: &#8216;authentication/roles&#8217;. If <em>body</em> is a <a
+href="../Hash.html">Hash</a>, then all key/values of it are flattened,
+escaped, etc.  This is the typical use case.  <em>params</em> are not
+generally used (they are for lower level control).
+</p>
+<h4>Returns</h4>
+<pre>
+  The body of the response or throws SplunkHTTPError if the error &gt;= 400
+</pre>
+<h4>Examples - Issue a oneshot search and return the results in json</h4>
+<pre>
+ ctx = Splunk::Context.new(:username =&gt; 'admin', :password =&gt; 'password', :protocol =&gt; 'https')
+ ctx.login
+ args[:search] = &quot;search error&quot;
+ args[:exec_mode] = &quot;oneshot&quot;
+ args[:output_mode] = &quot;json&quot;
+ response = ctx.post(&quot;search/jobs&quot;, args)</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="post-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/context.rb, line 118</span>
+118:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">post</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">body</span>, <span class="ruby-identifier">params</span>={})
+119:       <span class="ruby-comment cmt">#Warning - kludge alert!</span>
+120:       <span class="ruby-comment cmt">#because rest-client puts '[]' after repeated params, we need to process them special by</span>
+121:       <span class="ruby-comment cmt">#prepending them to any body we have</span>
+122:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">body</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Hash</span>
+123:         <span class="ruby-identifier">body</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+124:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+125:             <span class="ruby-identifier">body</span> = <span class="ruby-identifier">build_stream</span>(<span class="ruby-identifier">flatten_params</span>(<span class="ruby-identifier">body</span>)).<span class="ruby-identifier">string</span>
+126:             <span class="ruby-keyword kw">break</span>
+127:           <span class="ruby-keyword kw">end</span>
+128:         <span class="ruby-keyword kw">end</span>
+129:       <span class="ruby-keyword kw">end</span>
+130: 
+131:       <span class="ruby-identifier">resource</span> = <span class="ruby-identifier">create_resource</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">params</span>)
+132:       <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">post</span> <span class="ruby-identifier">body</span>, <span class="ruby-identifier">params</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">response</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">result</span>, &amp;<span class="ruby-identifier">block</span><span class="ruby-operator">|</span>
+133:         <span class="ruby-identifier">check_for_error_return</span>(<span class="ruby-identifier">response</span>)
+134:         <span class="ruby-identifier">response</span>
+135:       <span class="ruby-keyword kw">end</span>
+136:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Splunk::Collection</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/splunk-sdk-ruby/client_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/splunk-sdk-ruby/client.rb">lib/splunk-sdk-ruby/client.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-contains%3F">#contains?</a></li>
+					
+					<li><a href="#method-i-create">#create</a></li>
+					
+					<li><a href="#method-i-delete">#delete</a></li>
+					
+					<li><a href="#method-i-each">#each</a></li>
+					
+					<li><a href="#method-i-list">#list</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../test/testfile_txt.html">testfile.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Splunk.html">Splunk</a></li>
+				
+					<li><a href="../Splunk/AtomResponseLoader.html">Splunk::AtomResponseLoader</a></li>
+				
+					<li><a href="../Splunk/Collection.html">Splunk::Collection</a></li>
+				
+					<li><a href="../Splunk/Conf.html">Splunk::Conf</a></li>
+				
+					<li><a href="../Splunk/ConfCollection.html">Splunk::ConfCollection</a></li>
+				
+					<li><a href="../Splunk/Context.html">Splunk::Context</a></li>
+				
+					<li><a href="../Splunk/Entity.html">Splunk::Entity</a></li>
+				
+					<li><a href="../Splunk/Index.html">Splunk::Index</a></li>
+				
+					<li><a href="../Splunk/Job.html">Splunk::Job</a></li>
+				
+					<li><a href="../Splunk/Jobs.html">Splunk::Jobs</a></li>
+				
+					<li><a href="../Splunk/Message.html">Splunk::Message</a></li>
+				
+					<li><a href="../Splunk/ResultsReader.html">Splunk::ResultsReader</a></li>
+				
+					<li><a href="../Splunk/SearchResults.html">Splunk::SearchResults</a></li>
+				
+					<li><a href="../Splunk/Service.html">Splunk::Service</a></li>
+				
+					<li><a href="../Splunk/SplunkError.html">Splunk::SplunkError</a></li>
+				
+					<li><a href="../Splunk/SplunkHTTPError.html">Splunk::SplunkHTTPError</a></li>
+				
+					<li><a href="../JSON.html">JSON</a></li>
+				
+					<li><a href="../JSON/Stream.html">JSON::Stream</a></li>
+				
+					<li><a href="../JSON/Stream/Parser.html">JSON::Stream::Parser</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Splunk::Collection</h1>
+
+		<div id="description">
+			<p>
+Collections are groups of items, which can be <a
+href="Entity.html">Entity</a> objects, subclasses of <a
+href="Entity.html">Entity</a> objects or <a href="Job.html">Job</a>
+objects. They are created by calling one of many methods on the <a
+href="Service.html">Service</a> object.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(service, path, name=nil, procs={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 430</span>
+430:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">service</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">name</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">procs</span>={})
+431:       <span class="ruby-ivar">@service</span> = <span class="ruby-identifier">service</span>
+432:       <span class="ruby-ivar">@path</span> = <span class="ruby-identifier">path</span>
+433:       <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">name</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">name</span>.<span class="ruby-identifier">nil?</span>
+434:       <span class="ruby-ivar">@procs</span> = <span class="ruby-identifier">procs</span>
+435:       <span class="ruby-ivar">@item</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:item</span>, <span class="ruby-keyword kw">nil</span>)
+436:       <span class="ruby-ivar">@ctor</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:ctor</span>, <span class="ruby-keyword kw">nil</span>)
+437:       <span class="ruby-ivar">@dtor</span> = <span class="ruby-identifier">init_default</span>(<span class="ruby-value">:dtor</span>, <span class="ruby-keyword kw">nil</span>)
+438:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns an item in this collection given <b><tt>key</tt></b>
+</p>
+<h4>Example - get an <a href="Index.html">Index</a> object called <em>main</em></h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  main = svc.indexes['main']</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 486</span>
+486:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">key</span>)
+487:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplmentedError</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@item</span>.<span class="ruby-identifier">nil?</span>
+488:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">KeyError</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">contains?</span>(<span class="ruby-identifier">key</span>)
+489:       <span class="ruby-ivar">@item</span>.<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@service</span>, <span class="ruby-identifier">key</span>)
+490:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="contains--method" class="method-detail ">
+				<a name="method-i-contains%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">contains?</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <em>true</em> if an item called <b>+name</b> exists in the <a
+href="Collection.html">Collection</a>
+</p>
+<h4>Example - does an index called <em>main</em> exist?</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  if svc.indexes.contains?('main')
+    puts 'index main exists'
+  else
+    puts 'index main does not exist'
+  end</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="contains--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 501</span>
+501:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">contains?</span>(<span class="ruby-identifier">name</span>)
+502:       <span class="ruby-identifier">list</span>().<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">name</span>)
+503:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="create-method" class="method-detail ">
+				<a name="method-i-create"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create</span><span
+						class="method-args">(name, args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates an item in this collection named <b><tt>name</tt></b> with optional
+args
+</p>
+<h4>Example - create a user named <em>jack</em> and assign a password, a real name and a role</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.users.create('jack', :password =&gt; 'mypassword', :realname =&gt; 'Jack_be_nimble', :roles =&gt; ['user'])</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="create-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 475</span>
+475:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">args</span>={})
+476:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@ctor</span>.<span class="ruby-identifier">nil?</span>
+477:       <span class="ruby-ivar">@ctor</span>.<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@service</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">args</span>)
+478:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>[<span class="ruby-identifier">name</span>]
+479:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="delete-method" class="method-detail ">
+				<a name="method-i-delete"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">delete</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Deletes an item named <b><tt>name</tt></b>
+</p>
+<h4>Example - delete stanza <em>sdk-tests</em> from <em>props.conf</em></h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  props = svc.confs['props']
+  props.delete('sdk-tests')</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="delete-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 464</span>
+464:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">name</span>)
+465:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplmentedError</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@dtor</span>.<span class="ruby-identifier">nil?</span>
+466:       <span class="ruby-ivar">@dtor</span>.<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@service</span>, <span class="ruby-identifier">name</span>)
+467:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>
+468:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="each-method" class="method-detail ">
+				<a name="method-i-each"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">each</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Calls block once for each item in the collection
+</p>
+<h4>Example - display the name and level of each logger</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.loggers.each {|logger| puts logger.name + &quot;:&quot; + logger['level']}</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="each-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 452</span>
+452:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">each</span>(&amp;<span class="ruby-identifier">block</span>)  <span class="ruby-comment cmt"># :yields: item</span>
+453:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">list</span>().<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span><span class="ruby-operator">|</span>
+454:         <span class="ruby-keyword kw">yield</span> <span class="ruby-ivar">@item</span>.<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@service</span>, <span class="ruby-identifier">name</span>)
+455:       <span class="ruby-keyword kw">end</span>
+456:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="list-method" class="method-detail ">
+				<a name="method-i-list"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">list</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns an Array of item names contained in this <a
+href="Collection.html">Collection</a>
+</p>
+<h4>Example - list all roles</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  puts svc.roles.list</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="list-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 512</span>
+512:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">list</span>
+513:       <span class="ruby-identifier">retval</span> = []
+514:       <span class="ruby-identifier">response</span> = <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;?count=-1&quot;</span>)
+515:       <span class="ruby-identifier">record</span> = <span class="ruby-constant">AtomResponseLoader</span><span class="ruby-operator">::</span><span class="ruby-identifier">load_text_as_record</span>(<span class="ruby-identifier">response</span>)
+516:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">retval</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">record</span>.<span class="ruby-identifier">feed</span>.<span class="ruby-identifier">instance_variable_defined?</span>(<span class="ruby-value str">'@entry'</span>)
+517:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">record</span>.<span class="ruby-identifier">feed</span>.<span class="ruby-identifier">entry</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+518:         <span class="ruby-identifier">record</span>.<span class="ruby-identifier">feed</span>.<span class="ruby-identifier">entry</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">entry</span><span class="ruby-operator">|</span>
+519:           <span class="ruby-identifier">retval</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">entry</span>[<span class="ruby-value str">&quot;title&quot;</span>] <span class="ruby-comment cmt">#because 'entry' is an array we don't allow dots</span>
+520:         <span class="ruby-keyword kw">end</span>
+521:       <span class="ruby-keyword kw">else</span>
+522:         <span class="ruby-identifier">retval</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">record</span>.<span class="ruby-identifier">feed</span>.<span class="ruby-identifier">entry</span>.<span class="ruby-identifier">title</span>
+523:       <span class="ruby-keyword kw">end</span>
+524:       <span class="ruby-identifier">retval</span>
+525:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

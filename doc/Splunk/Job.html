@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Splunk::Job</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/splunk-sdk-ruby/client_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/splunk-sdk-ruby/client.rb">lib/splunk-sdk-ruby/client.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-cancel">#cancel</a></li>
+					
+					<li><a href="#method-i-disable_preview">#disable_preview</a></li>
+					
+					<li><a href="#method-i-enable_preview">#enable_preview</a></li>
+					
+					<li><a href="#method-i-events">#events</a></li>
+					
+					<li><a href="#method-i-finalize">#finalize</a></li>
+					
+					<li><a href="#method-i-pause">#pause</a></li>
+					
+					<li><a href="#method-i-preview">#preview</a></li>
+					
+					<li><a href="#method-i-read">#read</a></li>
+					
+					<li><a href="#method-i-results">#results</a></li>
+					
+					<li><a href="#method-i-searchlog">#searchlog</a></li>
+					
+					<li><a href="#method-i-setpriority">#setpriority</a></li>
+					
+					<li><a href="#method-i-setttl">#setttl</a></li>
+					
+					<li><a href="#method-i-summary">#summary</a></li>
+					
+					<li><a href="#method-i-timeline">#timeline</a></li>
+					
+					<li><a href="#method-i-touch">#touch</a></li>
+					
+					<li><a href="#method-i-unpause">#unpause</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../test/testfile_txt.html">testfile.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Splunk.html">Splunk</a></li>
+				
+					<li><a href="../Splunk/AtomResponseLoader.html">Splunk::AtomResponseLoader</a></li>
+				
+					<li><a href="../Splunk/Collection.html">Splunk::Collection</a></li>
+				
+					<li><a href="../Splunk/Conf.html">Splunk::Conf</a></li>
+				
+					<li><a href="../Splunk/ConfCollection.html">Splunk::ConfCollection</a></li>
+				
+					<li><a href="../Splunk/Context.html">Splunk::Context</a></li>
+				
+					<li><a href="../Splunk/Entity.html">Splunk::Entity</a></li>
+				
+					<li><a href="../Splunk/Index.html">Splunk::Index</a></li>
+				
+					<li><a href="../Splunk/Job.html">Splunk::Job</a></li>
+				
+					<li><a href="../Splunk/Jobs.html">Splunk::Jobs</a></li>
+				
+					<li><a href="../Splunk/Message.html">Splunk::Message</a></li>
+				
+					<li><a href="../Splunk/ResultsReader.html">Splunk::ResultsReader</a></li>
+				
+					<li><a href="../Splunk/SearchResults.html">Splunk::SearchResults</a></li>
+				
+					<li><a href="../Splunk/Service.html">Splunk::Service</a></li>
+				
+					<li><a href="../Splunk/SplunkError.html">Splunk::SplunkError</a></li>
+				
+					<li><a href="../Splunk/SplunkHTTPError.html">Splunk::SplunkHTTPError</a></li>
+				
+					<li><a href="../JSON.html">JSON</a></li>
+				
+					<li><a href="../JSON/Stream.html">JSON::Stream</a></li>
+				
+					<li><a href="../JSON/Stream/Parser.html">JSON::Stream::Parser</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Splunk::Job</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(svc, sid)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 909</span>
+909:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">svc</span>, <span class="ruby-identifier">sid</span>)
+910:       <span class="ruby-ivar">@service</span> = <span class="ruby-identifier">svc</span>
+911:       <span class="ruby-ivar">@sid</span> = <span class="ruby-identifier">sid</span>
+912:       <span class="ruby-ivar">@path</span> = <span class="ruby-constant">PATH_JOBS</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/'</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">sid</span>
+913:       <span class="ruby-ivar">@control_path</span> = <span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/control'</span>
+914:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Access an individual attribute named <b><tt>key</tt></b> about this job.
+Note that this results in an HTTP round trip, fetching all values for the
+<a href="Job.html">Job</a> even though a single attribute is returned.
+</p>
+<h4>Returns</h4>
+<p>
+A String representing the attribute fetched
+</p>
+<h4>Example - Display the disk usage of each job</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.jobs.list.each {|job| puts job['diskUsage'] }</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 925</span>
+925:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">key</span>)
+926:       <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">read</span>([<span class="ruby-identifier">key</span>])
+927:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">obj</span>[<span class="ruby-identifier">key</span>]
+928:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="cancel-method" class="method-detail ">
+				<a name="method-i-cancel"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">cancel</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Cancel this search job.  Stops the search and deletes the results cache.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="cancel-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 948</span>
+948:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cancel</span>
+949:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'cancel'</span>)
+950:       <span class="ruby-keyword kw">self</span>
+951:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="disable-preview-method" class="method-detail ">
+				<a name="method-i-disable_preview"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">disable_preview</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Disable preview generation for this job
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="disable-preview-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 954</span>
+954:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">disable_preview</span>
+955:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'disablepreview'</span>)
+956:       <span class="ruby-keyword kw">self</span>
+957:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="enable-preview-method" class="method-detail ">
+				<a name="method-i-enable_preview"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">enable_preview</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Enable preview generation for this job.  This may slow the search down
+considerably.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="enable-preview-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 971</span>
+971:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">enable_preview</span>
+972:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'enablepreview'</span>)
+973:       <span class="ruby-keyword kw">self</span>
+974:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="events-method" class="method-detail ">
+				<a name="method-i-events"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">events</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the events of this search job. These events are the data from the
+search pipeline before the first &#8220;transforming&#8221; search command.
+This is the primary method for a client to fetch a set of UNTRANSFORMED
+events for this job. This call is only valid if the search has no
+transforming commands. Set <b><tt>:output_mode</tt></b> to
+&#8216;json&#8217; if you want results in <a href="../JSON.html">JSON</a>.
+See <a
+href="http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI/RESTsearch#search.2Fjobs.2F.7Bsearch_id.7D.2Fevents">REST
+docs for this call</a> for more info on valid parameters and results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="events-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 966</span>
+966:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">events</span>(<span class="ruby-identifier">args</span>={})
+967:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/events'</span>, <span class="ruby-identifier">args</span>)
+968:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="finalize-method" class="method-detail ">
+				<a name="method-i-finalize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">finalize</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Finalize this search job. Stops the search and provides intermediate
+results (retrievable via Job::results)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="finalize-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 978</span>
+978:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">finalize</span>
+979:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'finalize'</span>)
+980:       <span class="ruby-keyword kw">self</span>
+981:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="pause-method" class="method-detail ">
+				<a name="method-i-pause"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pause</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Suspend this search job.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pause-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 984</span>
+984:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pause</span>
+985:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'pause'</span>)
+986:       <span class="ruby-keyword kw">self</span>
+987:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="preview-method" class="method-detail ">
+				<a name="method-i-preview"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">preview</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Generate a preview for this search <a href="Job.html">Job</a>.  Results are
+always in <a href="../JSON.html">JSON</a>. See <a
+href="http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI/RESTsearch#search.2Fjobs.2F.7Bsearch_id.7D.2Fresults_preview">REST
+docs for this call</a> for more info on valid parameters and results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="preview-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 992</span>
+992:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">preview</span>(<span class="ruby-identifier">args</span>={})
+993:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/results_preview'</span>, <span class="ruby-identifier">args</span>)
+994:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="read-method" class="method-detail ">
+				<a name="method-i-read"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">read</span><span
+						class="method-args">(field_list=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return all or a specified subset of attribute/value pairs for this <a
+href="Job.html">Job</a>
+</p>
+<h4>Returns</h4>
+<p>
+A <a href="../Hash.html">Hash</a> of all attributes and values for this <a
+href="Job.html">Job</a>.  If Array <b><tt>field_list</tt></b> is specified,
+only those fields are returned.  If a field does not exist, nil is returned
+for it&#8217;s value.
+</p>
+<h4>Example - Return a <a href="../Hash.html">Hash</a> of all attribute/values for a list of <a href="Job.html">Job</a></h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  svc.jobs.list.each do |job|
+    dataHash = job.read
+  end</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="read-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 941</span>
+941:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">read</span>(<span class="ruby-identifier">field_list</span>=<span class="ruby-keyword kw">nil</span>)
+942:       <span class="ruby-identifier">response</span> = <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span>)
+943:       <span class="ruby-identifier">data</span> = <span class="ruby-constant">AtomResponseLoader</span><span class="ruby-operator">::</span><span class="ruby-identifier">load_text</span>(<span class="ruby-identifier">response</span>)
+944:       <span class="ruby-identifier">_filter_content</span>(<span class="ruby-identifier">data</span>[<span class="ruby-value str">&quot;entry&quot;</span>][<span class="ruby-value str">&quot;content&quot;</span>], <span class="ruby-identifier">field_list</span>)
+945:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="results-method" class="method-detail ">
+				<a name="method-i-results"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">results</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<h4>Example 1 - Execute a blocking (synchronous) search returning the results</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  job = svc.jobs.create(&quot;search error&quot;, :max_count =&gt; 10, :max_results =&gt; 10, :exec_mode =&gt; 'blocking')
+  puts job.results(:output_mode =&gt; 'json')
+</pre>
+<h4>Example 2 - Execute an asynchronous search and wait for all the results</h4>
+<pre>
+  svc = Splunk::Service.connect(:username =&gt; 'admin', :password =&gt; 'foo')
+  job = svc.jobs.create(&quot;search error&quot;, :max_count =&gt; 10, :max_results =&gt; 10)
+  while true
+    stats = job.read(['isDone'])
+    break if stats['isDone'] == '1'
+    sleep(1)
+  end
+  puts job.results(:output_mode =&gt; 'json')</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="results-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1018</span>
+1018:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">results</span>(<span class="ruby-identifier">args</span>={})
+1019:       <span class="ruby-identifier">args</span>[<span class="ruby-value">:output_mode</span>] = <span class="ruby-value str">'json'</span>
+1020:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/results'</span>, <span class="ruby-identifier">args</span>)
+1021:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="searchlog-method" class="method-detail ">
+				<a name="method-i-searchlog"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">searchlog</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the search.log for this search <a href="Job.html">Job</a>.  Only a
+few lines of the search log are returned. See <a
+href="http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI/RESTsearch#search.2Fjobs.2F.7Bsearch_id.7D.2Fsearch.log">REST
+docs for this call</a> for more info on valid parameters and results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="searchlog-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1026</span>
+1026:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">searchlog</span>(<span class="ruby-identifier">args</span>={})
+1027:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'search.log'</span>, <span class="ruby-identifier">args</span>)
+1028:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setpriority-method" class="method-detail ">
+				<a name="method-i-setpriority"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setpriority</span><span
+						class="method-args">(value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the priority of this search <a href="Job.html">Job</a>. 
+<b><tt>value</tt></b> can be 0-10.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="setpriority-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1031</span>
+1031:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setpriority</span>(<span class="ruby-identifier">value</span>)
+1032:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'setpriority'</span>, <span class="ruby-value">:priority</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">value</span>)
+1033:       <span class="ruby-keyword kw">self</span>
+1034:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setttl-method" class="method-detail ">
+				<a name="method-i-setttl"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setttl</span><span
+						class="method-args">(value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set the time-to-live (ttl) of the search for this <a
+href="Job.html">Job</a>. <b><tt>value</tt></b> is a number
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="setttl-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1059</span>
+1059:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setttl</span>(<span class="ruby-identifier">value</span>)
+1060:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'setttl'</span>, <span class="ruby-value">:ttl</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">value</span>)
+1061:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="summary-method" class="method-detail ">
+				<a name="method-i-summary"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">summary</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns field summary information that is usually used to populate the
+fields picker in the default search view in the <a
+href="../Splunk.html">Splunk</a> GUI. Note that results are ONLY available
+in XML. See <a
+href="http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI/RESTsearch#search.2Fjobs.2F.7Bsearch_id.7D.2Fsummary">REST
+docs for this call</a> for more info on valid parameters and results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="summary-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1040</span>
+1040:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">summary</span>(<span class="ruby-identifier">args</span>={})
+1041:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'/summary'</span>, <span class="ruby-identifier">args</span>)
+1042:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="timeline-method" class="method-detail ">
+				<a name="method-i-timeline"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">timeline</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns event distribution over time of the so-far-read untransformed
+events.  Results are ONLY available in XML. See <a
+href="http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI/RESTsearch#search.2Fjobs.2F.7Bsearch_id.7D.2Ftimeline">REST
+docs for this call</a> for more info on valid parameters and results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="timeline-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1048</span>
+1048:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">timeline</span>(<span class="ruby-identifier">args</span>={})
+1049:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">get</span>(<span class="ruby-ivar">@path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'timeline'</span>, <span class="ruby-identifier">args</span>)
+1050:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="touch-method" class="method-detail ">
+				<a name="method-i-touch"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">touch</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Extends the expiration time of the search for this <a
+href="Job.html">Job</a> to now + ttl (see Job::setttl for setting the ttl)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="touch-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1053</span>
+1053:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">touch</span>
+1054:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'touch'</span>)
+1055:       <span class="ruby-keyword kw">self</span>
+1056:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="unpause-method" class="method-detail ">
+				<a name="method-i-unpause"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">unpause</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Resumes execution of the search for this <a href="Job.html">Job</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="unpause-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/splunk-sdk-ruby/client.rb, line 1064</span>
+1064:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">unpause</span>
+1065:       <span class="ruby-ivar">@service</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">post</span>(<span class="ruby-ivar">@control_path</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'unpause'</span>)
+1066:       <span class="ruby-keyword kw">self</span>
+1067:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
