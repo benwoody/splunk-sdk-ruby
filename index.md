@@ -95,7 +95,6 @@ Edit the ~/.splunkrc file (/home/_username_/.splunkrc) to use
 the Splunk admin role's username and password, and the management port, host and protocol of your Splunk Server.
 The format is a Ruby Hash:
 
-```ruby
     {
         #The user name (String) of a Splunk administrator. Required.
         :username => 'admin',
@@ -109,7 +108,6 @@ The format is a Ruby Hash:
         #Can be 'https' or 'http'. Defaults to 'https'.
         :protocol => 'https'
     }
-```
 
 To protect your Splunk password, you may want to delete this file when you are done running the unit tests.
 
@@ -140,28 +138,23 @@ low-level HTTP capabilities, including:
 Here is a simple example of using the binding layer. This example makes a REST 
 call to Splunk returning an Atom feed of all users defined in the system:
 
-```ruby
     require 'splunk-sdk-ruby'
 
     c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
     puts c.get('authentication/users') #Will spit out an ATOM feed in XML
-```
 
 Here is another example, but this time we convert the Atom feed to much cleaner
 JSON:
 
-```ruby
     require 'splunk-sdk-ruby'
 
     c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
     users = Splunk::AtomResponseLoader::load_text(c.get('authentication/users')) #Will spit out JSON
     puts users['feed']['updated']
-```
 
 If you wish you can use _dot accessors_ to access the individual elements as 
 long as they aren't in an Array: 
 
-```ruby
     require 'splunk-sdk-ruby'
 
     c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
@@ -169,7 +162,6 @@ long as they aren't in an Array:
     puts users.feed.updated             #Works
     puts users.feed.entry[0].title      #Throws exception
     puts users.feed.entry[0]['title']   #Works 
-```
 
 #### The Client Layer
 The _client_ layer builds on the _binding_ layer to provide a friendlier 
@@ -196,10 +188,8 @@ Here is a simple example of using the binding layer.  This example is the same
 as in the _binding_ layer. It returns all users in the system and displays 
 their names:
 
-```ruby
     svc = Splunk::Service.connect(:username => 'admin', :password => 'password')
     svc.users.each {|user| puts user.name}
-```
 
 ## Resources
 
