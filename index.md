@@ -66,7 +66,7 @@ resources to your computer.  Use the following command:
 
 #### Installing
 
-We highly recommend that you use _bundler_. See http://gembundler.com/ for more 
+We highly recommend that you use _bundler_. See [Bundler](http://gembundler.com/) for more 
 info.
 
 Add this line to your application's Gemfile:
@@ -116,8 +116,7 @@ In the base directory where you installed the Splunk Ruby SDK, run
 
 It should run many tests without error.
 
-Note that currently, the only examples are documented in-line with the code.  
-They can be seen by pointing your browser to http://splunk.github.com/splunk-sdk-ruby/doc/Splunk/Service.html
+Note that currently, the only examples are documented [in-line with the code](http://splunk.github.com/splunk-sdk-ruby/doc/Splunk/Service.html).
 
 ## Overview 
 
@@ -192,27 +191,18 @@ their names:
 
 ## Resources
 
-You can find many examples throughout the Ruby SDK class documentation:
+You can find many examples throughout the [Ruby SDK class documentation](http://splunk.github.com/splunk-sdk-ruby/doc/)
 
-http://splunk.github.com/splunk-sdk-ruby/doc/
+You can find anything having to do with developing on Splunk at the [Splunk developer portal](http://dev.splunk.com)
 
-You can find anything having to do with developing on Splunk at the Splunk 
-developer portal:
-
-http://dev.splunk.com
-
-Splunk REST API reference documentation:
-
-http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI
+[Splunk REST API reference documentation](http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI)
 
 ## Community
 
-* Email: Stay connected with other developers building on Splunk: 
-    https://groups.google.com/forum/#!forum/splunkdev 
-* Issues: https://github.com/splunk/splunk-sdk-python/issues
-* Answers: Check out this tag on Splunk answers for:  
-    http://splunk-base.splunk.com/tags/python/
-* Blog:  http://blogs.splunk.com/dev/
+* Email: Stay connected with [other developers building on Splunk](https://groups.google.com/forum/#!forum/splunkdev) 
+* [Issues](https://github.com/splunk/splunk-sdk-python/issues)
+* Answers: Check out [Splunk answers](http://splunk-base.splunk.com/tags/ruby/)
+* [Blog]:( http://blogs.splunk.com/dev/)
 * Twitter: [@splunkdev](http://twitter.com/#!/splunkdev)
 
 ### How to contribute
@@ -225,7 +215,7 @@ this README for more updates soon.
 * SDKs in Preview will not be Splunk supported.  Once the Ruby SDK moves to 
 an Open Beta we will provide more detail on support.  
 
-* Issues should be filed here:  https://github.com/splunk/splunk-sdk-ruby/issues
+* Issues should be [filed here]( https://github.com/splunk/splunk-sdk-ruby/issues)
 
 ### Contact Us
 You can reach the Dev Platform team at devinfo@splunk.com
