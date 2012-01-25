@@ -53,14 +53,13 @@ Here's what you need to get going with the Splunk Ruby SDK.
 
 #### Splunk
 
-If you haven't already installed Splunk, download it here: 
-http://www.splunk.com/download. For more about installing and running Splunk 
-and system requirements, see Installing & Running Splunk 
-(http://dev.splunk.com/view/SP-CAAADRV).
+If you haven't already installed Splunk, [download it here](http://www.splunk.com/download).
+For more about installing and running Splunk 
+and system requirements, see [Installing & Running Splunk](http://dev.splunk.com/view/SP-CAAADRV).
 
 #### Splunk Ruby SDK
 
-Get the Splunk Ruby SDK from GitHub (https://github.com) and clone the
+Get the Splunk Ruby SDK from [GitHub](https://github.com) and clone the
 resources to your computer.  Use the following command:
 
     git clone https://github.com/splunk/splunk-sdk-ruby.git
