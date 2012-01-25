@@ -195,14 +195,14 @@ You can find many examples throughout the [Ruby SDK class documentation](http://
 
 You can find anything having to do with developing on Splunk at the [Splunk developer portal](http://dev.splunk.com)
 
-[Splunk REST API reference documentation](http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI)
+You can find information on all things REST at the [Splunk REST API reference documentation](http://docs.splunk.com/Documentation/Splunk/latest/RESTAPI)
 
 ## Community
 
 * Email: Stay connected with [other developers building on Splunk](https://groups.google.com/forum/#!forum/splunkdev) 
 * [Issues](https://github.com/splunk/splunk-sdk-python/issues)
-* Answers: Check out [Splunk answers](http://splunk-base.splunk.com/tags/ruby/)
-* [Blog]:( http://blogs.splunk.com/dev/)
+* [Questions and Answers via Splunk Answers](http://splunk-base.splunk.com/tags/ruby/)
+* [Blog]( http://blogs.splunk.com/dev/)
 * Twitter: [@splunkdev](http://twitter.com/#!/splunkdev)
 
 ### How to contribute
@@ -218,6 +218,6 @@ an Open Beta we will provide more detail on support.
 * Issues should be [filed here]( https://github.com/splunk/splunk-sdk-ruby/issues)
 
 ### Contact Us
-You can reach the Dev Platform team at devinfo@splunk.com
+You can reach the Dev Platform team at [devinfo@splunk.com](mailto://devinfo@splunk.com)
 
 
