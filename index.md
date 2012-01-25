@@ -126,7 +126,7 @@ _client_ layer.
 
 #### The Binding Layer
 This is the lowest layer of the Splunk Ruby SDK. It is a thin wrapper around 
-low-level HTTP capabilities, including:
+low-level HTTP capabilities, including: ([Documentation for the binding layer is in the Context class](http://splunk.github.com/splunk-sdk-ruby/doc/Splunk/Context.html))
 
 * Authentication and namespace URL management
 * Accessible low-level HTTP interface for use by developers who want
@@ -164,7 +164,7 @@ long as they aren't in an Array:
 #### The Client Layer
 The _client_ layer builds on the _binding_ layer to provide a friendlier 
 interface to Splunk that abstracts away many of the lower level details of the 
-_binding_ layer.  It currently abstracts the following (with more to come):
+_binding_ layer.  It currently abstracts the following (with more to come): ([Documentation for the client layer is in the Service class](http://splunk.github.com/splunk-sdk-ruby/doc/Splunk/Service.html))
 
 * Authentication
 * Apps
