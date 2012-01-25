@@ -28,7 +28,7 @@ License 2.0. Details can be found in the file LICENSE.
 ## This SDK is a Preview Release
 
 1.  This Preview release a pre-beta release.  There will also be a beta 
-    release prior to a general release. It is incomplete and may^H^H^Hwill have bugs.
+    release prior to a general release. It is incomplete and may\^H\^H\^Hwill have bugs.
 
 2.  The Apache license only applies to this SDK and no other Software provided 
     by Splunk.
@@ -200,7 +200,7 @@ You can find information on all things REST at the [Splunk REST API reference do
 ## Community
 
 * Email: Stay connected with [other developers building on Splunk](https://groups.google.com/forum/#!forum/splunkdev) 
-* [Issues](https://github.com/splunk/splunk-sdk-python/issues)
+* [Issues](https://github.com/splunk/splunk-sdk-ruby/issues)
 * [Questions and Answers via Splunk Answers](http://splunk-base.splunk.com/tags/ruby/)
 * [Blog]( http://blogs.splunk.com/dev/)
 * Twitter: [@splunkdev](http://twitter.com/#!/splunkdev)
