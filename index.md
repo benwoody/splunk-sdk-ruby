@@ -62,7 +62,7 @@ and system requirements, see [Installing & Running Splunk](http://dev.splunk.com
 Get the Splunk Ruby SDK from [GitHub](https://github.com) and clone the
 resources to your computer.  Use the following command:
 
-    git clone https://github.com/splunk/splunk-sdk-ruby.git
+        git clone https://github.com/splunk/splunk-sdk-ruby.git
 
 #### Installing
 
@@ -71,16 +71,16 @@ info.
 
 Add this line to your application's Gemfile:
 
-    gem 'splunk-sdk-ruby'
+        gem 'splunk-sdk-ruby'
 
 And then execute:
 
-    $ bundle
+        $ bundle
 
 If you are not using bundler, than you can install it like this:
 
-    $ gem build splunk-sdk-ruby.gemspec
-    $ gem install splunk-sdk-ruby
+        $ gem build splunk-sdk-ruby.gemspec
+        $ gem install splunk-sdk-ruby
 
 #### Requirements
 
@@ -94,25 +94,25 @@ Edit the ~/.splunkrc file (/home/_username_/.splunkrc) to use
 the Splunk admin role's username and password, and the management port, host and protocol of your Splunk Server.
 The format is a Ruby Hash:
 
-    {
-        #The user name (String) of a Splunk administrator. Required.
-        :username => 'admin',
-        #The password (String) of the above user. Required.
-        :password => 'password',
-        #The management port (String) of the Splunk Server. Defaults to '8089'.
-        :port => '8089',
-        #The host (String) where the Splunk Server is running. Defaults to 'localhost'
-        :host => 'localhost',
-        #The protocol that the Splunk Server's management port is using.
-        #Can be 'https' or 'http'. Defaults to 'https'.
-        :protocol => 'https'
-    }
+        {
+            #The user name (String) of a Splunk administrator. Required.
+            :username => 'admin',
+            #The password (String) of the above user. Required.
+            :password => 'password',
+            #The management port (String) of the Splunk Server. Defaults to '8089'.
+            :port => '8089',
+            #The host (String) where the Splunk Server is running. Defaults to 'localhost'
+            :host => 'localhost',
+            #The protocol that the Splunk Server's management port is using.
+            #Can be 'https' or 'http'. Defaults to 'https'.
+            :protocol => 'https'
+        }
 
 To protect your Splunk password, you may want to delete this file when you are done running the unit tests.
 
 In the base directory where you installed the Splunk Ruby SDK, run
 
-    $ rake test
+        $ rake test
 
 It should run many tests without error.
 
@@ -136,30 +136,30 @@ low-level HTTP capabilities, including: ([Documentation for the binding layer is
 Here is a simple example of using the binding layer. This example makes a REST 
 call to Splunk returning an Atom feed of all users defined in the system:
 
-    require 'splunk-sdk-ruby'
+        require 'splunk-sdk-ruby'
 
-    c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
-    puts c.get('authentication/users') #Will spit out an ATOM feed in XML
+        c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
+        puts c.get('authentication/users') #Will spit out an ATOM feed in XML
 
 Here is another example, but this time we convert the Atom feed to much cleaner
 JSON:
 
-    require 'splunk-sdk-ruby'
+        require 'splunk-sdk-ruby'
 
-    c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
-    users = Splunk::AtomResponseLoader::load_text(c.get('authentication/users')) #Will spit out JSON
-    puts users['feed']['updated']
+        c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
+        users = Splunk::AtomResponseLoader::load_text(c.get('authentication/users')) #Will spit out JSON
+        puts users['feed']['updated']
 
 If you wish you can use _dot accessors_ to access the individual elements as 
 long as they aren't in an Array: 
 
-    require 'splunk-sdk-ruby'
+        require 'splunk-sdk-ruby'
 
-    c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
-    users =  Splunk::AtomResponseLoader::load_text_as_record(c.get('authentication/users')) #Will spit out clean JSON
-    puts users.feed.updated             #Works
-    puts users.feed.entry[0].title      #Throws exception
-    puts users.feed.entry[0]['title']   #Works 
+        c = Splunk::Context.new(:username => "admin", :password => 'password', :protocol => 'https').login
+        users =  Splunk::AtomResponseLoader::load_text_as_record(c.get('authentication/users')) #Will spit out clean JSON
+        puts users.feed.updated             #Works
+        puts users.feed.entry[0].title      #Throws exception
+        puts users.feed.entry[0]['title']   #Works 
 
 #### The Client Layer
 The _client_ layer builds on the _binding_ layer to provide a friendlier 
@@ -186,8 +186,8 @@ Here is a simple example of using the binding layer.  This example is the same
 as in the _binding_ layer. It returns all users in the system and displays 
 their names:
 
-    svc = Splunk::Service.connect(:username => 'admin', :password => 'password')
-    svc.users.each {|user| puts user.name}
+        svc = Splunk::Service.connect(:username => 'admin', :password => 'password')
+        svc.users.each {|user| puts user.name}
 
 ## Resources
 
