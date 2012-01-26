@@ -94,7 +94,7 @@ Edit the ~/.splunkrc file (/home/_username_/.splunkrc) to use
 the Splunk admin role's username and password, and the management port, host and protocol of your Splunk Server.
 The format is a Ruby Hash:
 
-   {
+    {
         #The user name (String) of a Splunk administrator. Required.
         :username => 'admin',
         #The password (String) of the above user. Required.
