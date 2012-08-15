@@ -2,8 +2,8 @@
 require File.expand_path('../lib/splunk-sdk-ruby/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ['Rob Das','Ben Woodall']
-  gem.email         = ['rob@splunk.com', 'mail@benwoodall.com']
+  gem.authors       = ['Rob Das']
+  gem.email         = ['rob@splunk.com']
   gem.description   = %q{Splunk SDK for Ruby}
   gem.summary       = %q{Ruby bindings to Splunk REST layer}
   gem.homepage      = 'http://dev.splunk.com'
